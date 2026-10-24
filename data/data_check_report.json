@@ -1,0 +1,144 @@
+{
+  "source_folder": "D:\\FAPI-Seg\\Radiomics\\Modeling\\Final_Excels\\Target_Assigned",
+  "files": {
+    "CT.csv": {
+      "sha256": "57047b8374c9de83f09425393dfc719ecc03f28be737921cf239a3e990e146df",
+      "format": "CSV (no sheets)",
+      "rows": 1020,
+      "radiomic_features": 145,
+      "non_feature_columns": [
+        "INFO_PatientName",
+        "INFO_NameOfRoi",
+        "Target"
+      ],
+      "feature_dtype": "float64 (all numeric after parsing)",
+      "patients": 24,
+      "Target_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "missing_feature_cells": 3,
+      "features_with_missing": 1
+    },
+    "PET_64.csv": {
+      "sha256": "9c3a9722673ed9f6acc71af1a78a68627c694dd2d113696ef298d4c1ee8589eb",
+      "format": "CSV (no sheets)",
+      "rows": 1020,
+      "radiomic_features": 145,
+      "non_feature_columns": [
+        "INFO_PatientName",
+        "INFO_NameOfRoi",
+        "Target",
+        "Unnamed: 148"
+      ],
+      "feature_dtype": "float64 (all numeric after parsing)",
+      "patients": 24,
+      "Target_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "missing_feature_cells": 97,
+      "features_with_missing": 61
+    },
+    "PET_128.csv": {
+      "sha256": "f592668999b3711ce33596559e9680817dfd1c57bff7efeedc3fa838abc99b26",
+      "format": "CSV (no sheets)",
+      "rows": 1020,
+      "radiomic_features": 145,
+      "non_feature_columns": [
+        "INFO_PatientName",
+        "INFO_NameOfRoi",
+        "Target",
+        "Unnamed: 148"
+      ],
+      "feature_dtype": "float64 (all numeric after parsing)",
+      "patients": 24,
+      "Target_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "missing_feature_cells": 61,
+      "features_with_missing": 61
+    }
+  },
+  "cross_file": "identical (patient, focus) key sets in all three files; Target identical for every key",
+  "experiments": {
+    "exp1_pet64": {
+      "modalities": [
+        "PET64"
+      ],
+      "observations": 1020,
+      "patients": 24,
+      "class_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "candidate_features": 145,
+      "PET_features": 145,
+      "CT_features": 0,
+      "missing_cells": 97
+    },
+    "exp2_pet128": {
+      "modalities": [
+        "PET128"
+      ],
+      "observations": 1020,
+      "patients": 24,
+      "class_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "candidate_features": 145,
+      "PET_features": 145,
+      "CT_features": 0,
+      "missing_cells": 61
+    },
+    "exp3_pet64_ct": {
+      "modalities": [
+        "PET64",
+        "CT"
+      ],
+      "observations": 1020,
+      "patients": 24,
+      "class_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "candidate_features": 290,
+      "PET_features": 145,
+      "CT_features": 145,
+      "missing_cells": 100
+    },
+    "exp4_pet128_ct": {
+      "modalities": [
+        "PET128",
+        "CT"
+      ],
+      "observations": 1020,
+      "patients": 24,
+      "class_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "candidate_features": 290,
+      "PET_features": 145,
+      "CT_features": 145,
+      "missing_cells": 64
+    },
+    "exp5_ct": {
+      "modalities": [
+        "CT"
+      ],
+      "observations": 1020,
+      "patients": 24,
+      "class_counts": {
+        "0": 487,
+        "1": 533
+      },
+      "candidate_features": 145,
+      "PET_features": 0,
+      "CT_features": 145,
+      "missing_cells": 3
+    }
+  }
+}
